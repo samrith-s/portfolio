@@ -10,13 +10,13 @@ type Props = CollectionEntry<"blog">["data"] & {
   readingTime?: string;
 };
 
-const { title, description, pubDate, updatedDate, readingTime } = Astro.props;
+const { title, pubDate, readingTime } = Astro.props;
 
 const month = new Date(pubDate).getMonth();
 const season = SEASONS.at(month) as Seasons;
 ---
 
-<RootLayout title={title} description={description} season={season}>
+<RootLayout title={title} season={season}>
   <article class="grid grid-flow-row grid-cols-1 pt-5 sm:pt-10">
     <h1 class={cn("text-4xl", "m-0", "mb-4")}>
       {title}

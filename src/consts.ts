@@ -2,6 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = "Samrith Shankar";
+export const SITE_SUBLINE = "Experimenting with all things JavaScript.";
 export const SITE_DESCRIPTION =
   "Samrith Shankar is a prominent fullstack developer and engineering leader. He loves working with TypeScript and has created numerous open source packages. He also provides advice and mentorship to startups.";
 
